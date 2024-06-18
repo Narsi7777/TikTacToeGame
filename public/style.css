@@ -1,0 +1,67 @@
+body{
+
+background-image: url("./background\ 3.jpg");
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gamepad{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding-top: 20px;
+    gap: 5px;
+}  
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    background-color: rgb(33, 216, 33);
+    border: black solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.buttons button:hover{
+    background-color: rgb(9, 196, 9);
+}
+
+
+.gamepad button{
+    padding: 70px;
+    border-radius: 10px;
+}
+
+.gamepad button:hover{
+    background-color:beige;
+    cursor: pointer;
+}
+.winningtext h1{
+    color:white;
+    font-style:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-shadow: 10px 5px 10px black
+}
+
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: black;
+    }
+  }
